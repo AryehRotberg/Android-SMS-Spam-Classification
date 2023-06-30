@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity
             while (cursor.moveToNext())
                 listItem.add(cursor.getString(0) +": " +
                         cursor.getString(1) +
-                        " - Spam Confidence: " + cursor.getString(3));
+                        " -> Spam Confidence: " + cursor.getString(3));
         }
 
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listItem);
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity
         {
             builder.setPositiveButton("Yes", (dialogInterface, i) ->
             {
-                helper.deleteRow(listItem.get(pos).split(": ")[1].split(" -")[0]);
+                helper.deleteRow(listItem.get(pos).split(": ")[1].split(" ->")[0]);
                 updateData();
             });
 
