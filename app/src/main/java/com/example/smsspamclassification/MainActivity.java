@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity
 
         updateData();
     }
+
     public void updateData()
     {
         listItem = new ArrayList<>();
