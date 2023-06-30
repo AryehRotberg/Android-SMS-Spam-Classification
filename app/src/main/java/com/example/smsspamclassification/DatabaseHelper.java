@@ -54,7 +54,7 @@ public class DatabaseHelper extends SQLiteOpenHelper
         cv.put(COLUMN_CLASS, classType);
         cv.put(COLUMN_CONFIDENCE, confidence);
 
-        long result = db.insert(TABLE_NAME,null, cv);
+        long result = db.insert(TABLE_NAME, null, cv);
 
         if (result == -1)
             Toast.makeText(context, "Failed", Toast.LENGTH_SHORT).show();

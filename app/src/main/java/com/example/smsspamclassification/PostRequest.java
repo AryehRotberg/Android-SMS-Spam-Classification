@@ -24,9 +24,10 @@ public class PostRequest
     private final Context context;
     private final String text_input, sender;
     private final boolean loading;
-    private ProgressDialog progressDialog;
     private final Handler handler;
     private final Runnable runnable;
+
+    private ProgressDialog progressDialog;
 
     public PostRequest(Context context, String text_input, String sender, boolean loading)
     {
